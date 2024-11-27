@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 2.5rem 0;
+}
+
+.textContainer {
+    width: 100%;
+}
+
+.firstContent .textContainer ul,
+.secondContent .textContainer p,
+.thirdContent p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    margin-top: 2rem;
+}
+
+.imageContainer {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.section.secondContent {
+    background-image: url("../../assets/images/homepage_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    align-items: center;
+}
+
+.secondContent .textContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.2rem;
+    padding: 1.5rem 1rem;
+    width: 80%;
+    color: white;
+}
+
+.secondContent .textContainer h2 {
+    margin-top: 0;
+}
+
+.thirdContent h2,
+.thirdContent h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.paragraphs p {
+    margin-bottom: 1rem;
+}
+
+.paragraphs p:first-of-type {
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        flex-direction: row;
+        width: 70%;
+        padding: 2.5rem;
+    }
+
+    .firstContent {
+        flex-direction: row-reverse;
+    }
+
+    .firstContent .textContainer {
+        width: 50%;
+    }
+
+    .list {
+        margin: 2rem 0;
+    }
+
+    .imageContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+    }
+
+    .image {
+        width: 85%;
+    }
+
+    .section.secondContent {
+        padding: 4rem 0;
+        background-position: 0 10%;
+    }
+
+    .secondContent .textContainer {
+        padding: 2rem;
+        width: 25%;
+        margin-left: 15%;
+    }
+
+    .thirdContent {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .thirdContent h3 {
+        margin-bottom: 2rem;
+    }
+
+    .thirdContent .paragraphs {
+        columns: 3;
+        column-gap: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .thirdContent .paragraphs p {
+        margin-bottom: 1.5rem;
+    }
+
+    .thirdContent .paragraphs p:first-of-type {
+        margin-top: 0;
+    }
+}

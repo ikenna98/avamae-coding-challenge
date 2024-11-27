@@ -1,0 +1,28 @@
+.footer {
+    margin: 0 auto;
+    width: 90%;
+    border-top-style: solid;
+    border-top-color: lightgray;
+    border-top-width: 1px;
+}
+
+.footer p {
+    color: darkgrey;
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+.footer span {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        width: 75%;
+    }
+
+    .footer p {
+        float: right;
+    }
+}

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p,
+label {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+p.text-bold,
+span.text-bold,
+label.text-bold {
+    font-weight: 500;
+}
+
+a:link {
+    color: #2084bc;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+img {
+    border-radius: 0.2rem;
+}
+
+input {
+    height: 2.5rem;
+    border-radius: 0.2rem;
+}
+
+input,
+textarea {
+    background-color: #f8f9fc;
+    border: 1px solid lightgray;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #387cb4;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 8rem;
+}
+
+label span {
+    font-style: italic;
+    font-size: 0.7rem;
+    color: darkgray;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+button.button-blue-text,
+button.button-white-text {
+    font-family: inherit;
+    padding: 0.8rem 2rem;
+    border-radius: 0.2rem;
+    border-style: none;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.button-blue-text {
+    color: #2084bc;
+    background-color: #eef7ff;
+}
+
+button.button-white-text {
+    color: white;
+    background-color: #387cb4;
+}
+
+button.button-blue-text.button-login,
+button.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.swiper-container {
+    overflow: hidden;
+    position: relative;
+}
+
+span.swiper-pagination-bullet-active-next,
+span.swiper-pagination-bullet-active-next-next,
+span.swiper-pagination-bullet-active-prev,
+span.swiper-pagination-bullet-active-prev-prev {
+    background-color: white;
+    opacity: 1;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev,
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    button.button-blue-text,
+    button.button-white-text {
+        width: fit-content;
+    }
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+        display: flex;
+        background-image: url(../../assets/images/Icon_Arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 25% auto;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    div.swiper-button-next {
+        transform: rotate(180deg);
+        right: 0;
+    }
+
+    div.swiper-button-prev {
+        left: 0;
+    }
+}

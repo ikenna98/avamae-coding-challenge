@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# AVAMAE Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using TypeScript.
+
+Conforms to the specification set by the coding challenge.
+
+Unit testing done on the components with a 97% coverage of the components folder, 63% overall:
+
+![Unit testing coverage of components](./public/coverage.png)
+
+## Website preview
+
+Home:
+![Homepage preview](./public/homepage.png)
+
+About:
+![About us page preview](./public/about-page.png)
+
+Contact:
+![Contact us page preview](./public/contact-page.png)
+
+
+## Installed packages
+These packages were allowed to be used for the challenge:
+- [react-router-dom](https://github.com/remix-run/react-router) (for page navigation)
+- [react-id-swiper](https://github.com/kidjp85/react-id-swiper) (for the carousel of images)
+- [axios](https://github.com/axios/axios) (for requests to the AVAMAE API)
+- [formik](https://github.com/jaredpalmer/formik) (for handling form validation and submission)
 
 ## Available Scripts
 
