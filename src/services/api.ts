@@ -14,15 +14,14 @@ export const getCarouselData = async (): Promise<CarouselData> => {
         );
         return response.data;
     } catch (error) {
-        const axiosError = error as AxiosError;
-        if (axiosError.response) {
-            console.error("Error fetching data:", error);
-        }
+        console.error("Error fetching data:", error);
         throw error;
     }
 };
 
-export const postFormData = async (values: FilteredFormValues): Promise<boolean> => {
+export const postFormData = async (
+    values: FilteredFormValues
+): Promise<boolean> => {
     try {
         const response = await axios.post(
             `${baseUrl}/contact-us/submit`,
@@ -31,14 +30,7 @@ export const postFormData = async (values: FilteredFormValues): Promise<boolean>
         console.log("Form successfully submitted!", response);
         return true;
     } catch (error) {
-        const axiosError = error as AxiosError;
-        if (axiosError.response) {
-            const ErrorResponse = axiosError.response.data as ErrorResponse;
-            console.error(
-                "There was an error submitting the form!",
-                ErrorResponse.Errors
-            );
-        }
+        console.error("There was an error submitting the form!", error);
         alert(`Error posting data: ${(error as Error).message}`);
         return false;
     }
