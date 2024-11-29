@@ -22,7 +22,7 @@ export const getCarouselData = async (): Promise<CarouselData> => {
     }
 };
 
-export const postFormData = async (values: FilteredFormValues) => {
+export const postFormData = async (values: FilteredFormValues): Promise<boolean> => {
     try {
         const response = await axios.post(
             `${baseUrl}/contact-us/submit`,
