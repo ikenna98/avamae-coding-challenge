@@ -1,7 +1,6 @@
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 import {
     CarouselData,
-    ErrorResponse,
     FilteredFormValues,
 } from "../types/types";
 
