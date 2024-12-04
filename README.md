@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using TypeScript.
 
+[View Site](https://avamae-coding-challenge-ikenna.netlify.app/)
+
 Conforms to the specification set by the coding challenge.
 
 Unit testing done on the components with a 97% coverage of the components folder, 63% overall:
